@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grace Odongo | Portfolio</title>
+    <title>Grace Odongo | Software Engineer</title>
+    <meta name="description"
+        content="Grace Odongo, software engineer in Nairobi. React, TypeScript and Python developer with experience building digital insurance products at Britam.">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
         rel="stylesheet">
@@ -12,18 +14,17 @@
 
 <body>
 
-
     <nav id="navbar">
         <div class="nav-container">
             <a href="#hero" class="logo">Grace Odongo</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
-
 
     <section id="hero">
         <div class="floating-shapes">
@@ -33,11 +34,13 @@
         </div>
         <div class="hero-content">
             <h1>Grace Odongo</h1>
-            <p>Tech & AI Explorer | Building Smart Web Experiences</p>
-            <a href="#projects" class="btn">See My Work</a>
+            <p>Software Engineer | React · TypeScript · Python</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">See My Work</a>
+                <a href="Grace_Odongo_CV.pdf" target="_blank" rel="noopener" class="btn btn-outline">Download CV</a>
+            </div>
         </div>
     </section>
-
 
     <section id="about">
         <div class="about-container">
@@ -45,38 +48,95 @@
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>
-                    Hi!, I'm Grace, a Computer Science graduate with a passion for building intuitive and interactive
-                    web
-                    applications.
-                    I enjoy creating projects that blend design with functionality, and I'm always exploring new
-                    technologies to improve my skills.
+                    Hi, I'm Grace, a software engineer in Nairobi with a BSc in Computer Science and software
+                    engineering training from Moringa School. During my internship at Britam, I worked on digital
+                    insurance products: WhatsApp chatbot purchase flows built on Infobip, frontend features for an
+                    agent web portal, and the UI/UX design for an internal data dashboard.
                 </p>
                 <p>
-                    Skills: HTML, CSS, JavaScript, React, Python(learning) , AWS Cloud Practitioner
+                    I enjoy building products that are simple for people to use and well connected to the systems
+                    behind them, and I'm always exploring new technologies to keep improving.
+                </p>
+                <div class="skills">
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>Git &amp; GitHub</span>
+                    <span>AWS Cloud Practitioner</span>
+                    <span>Figma</span>
+                    <span>Infobip</span>
+                </div>
             </div>
         </div>
     </section>
 
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-card">
+            <div class="experience-header">
+                <div>
+                    <h3>Software Engineering Intern (UI/UX &amp; Frontend)</h3>
+                    <p class="company">Britam · Nairobi</p>
+                </div>
+                <p class="dates">Feb 2026 – Nov 2026</p>
+            </div>
+            <ul>
+                <li><strong>WhatsApp insurance chatbot:</strong> added and configured insurance products on Britam's
+                    WhatsApp chatbot using Infobip, connecting the purchase flows to the database and to the systems of
+                    each business unit (Life, General Insurance, Asset Managers and Connect).</li>
+                <li><strong>Agent web portal:</strong> built frontend features with React and Docker for the portal
+                    behind Britam's agent app, which shows agents every product sold, calculates their commissions and
+                    gives the business sales reports.</li>
+                <li><strong>DigiOps dashboard (UI/UX):</strong> designed an internal platform that will bring data from
+                    all of Britam's systems into a single view for staff and administrators.</li>
+            </ul>
+        </div>
+    </section>
 
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
+                <h3>Moringa Innovation Marketplace</h3>
+                <p class="role">Full Stack Developer</p>
+                <p>A platform where students showcase and discover innovation projects. I built reusable React
+                    components and responsive pages, Flask REST APIs for login and project data, and a PostgreSQL
+                    database, then deployed the frontend on Vercel and the backend on Render.</p>
+                <div class="tech-stack">
+                    <span>React</span>
+                    <span>Flask</span>
+                    <span>PostgreSQL</span>
+                    <span>Vercel</span>
+                    <span>Render</span>
+                </div>
+                <a href="https://frontend-teal-seven-91.vercel.app/" target="_blank" rel="noopener"
+                    class="project-btn">Live Demo</a>
+            </div>
+            <div class="project-card">
                 <h3>VibeFit</h3>
-                <p>A fitness app that generates personalized workouts based on the user's mood. Users input how they feel, 
-                    and the app suggests exercises that match that mood for better engagement and motivation.</p>
+                <p class="role">Frontend Developer</p>
+                <p>A fitness app that generates personalized workouts based on the user's mood. Users input how they
+                    feel, and the app suggests exercises that match that mood for better engagement and motivation.</p>
                 <div class="tech-stack">
                     <span>HTML</span>
                     <span>CSS</span>
                     <span>JavaScript</span>
                     <span>React</span>
                 </div>
-                <a href="https://vibe-fit-pd6a.vercel.app/" target="_blank" class="project-btn">View Project</a>
+                <a href="https://vibe-fit-pd6a.vercel.app/" target="_blank" rel="noopener" class="project-btn">Live
+                    Demo</a>
             </div>
             <div class="project-card">
                 <h3>Salon Management System</h3>
-                <p>A web application for salon scheduling and booking that eliminates long queues. 
-                    Users can see available time slots, book appointments, and receive confirmations.</p>
+                <p class="role">Developer</p>
+                <p>A web application for salon scheduling and booking that eliminates long queues. Users can see
+                    available time slots, book appointments, and receive confirmations.</p>
                 <div class="tech-stack">
                     <span>HTML</span>
                     <span>CSS</span>
@@ -84,30 +144,33 @@
                     <span>PHP</span>
                     <span>MySQL</span>
                 </div>
-                <!-- <a href="https://vibe-fit-pd6a.vercel.app/" target="_blank" class="project-btn">View Project</a> -->
             </div>
         </div>
-
-        </div>
+        <p class="more-code">More of my code is on <a href="https://github.com/odongograce" target="_blank"
+                rel="noopener">GitHub</a>.</p>
     </section>
-
 
     <section id="contact">
         <h2>Contact Me</h2>
         <div class="contact-container">
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+            <p class="contact-intro">I'm open to software engineering roles. The quickest way to reach me is email:</p>
+            <a class="email-link" href="mailto:graceakinyi024@gmail.com">graceakinyi024@gmail.com</a>
+            <form id="contact-form">
+                <input type="text" id="contact-name" placeholder="Your Name" required>
+                <input type="email" id="contact-email" placeholder="Your Email" required>
+                <textarea id="contact-message" placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
             <div class="social-links">
-                <a href="https://github.com/odongograce" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/grace-odongo-3ab3b51b5/" target="_blank">LinkedIn</a>
-
+                <a href="https://github.com/odongograce" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/grace-odongo-3ab3b51b5/" target="_blank" rel="noopener">LinkedIn</a>
             </div>
         </div>
     </section>
+
+    <footer>
+        <p>© 2026 Grace Odongo</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
